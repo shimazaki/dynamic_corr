@@ -1,0 +1,79 @@
+% fig.
+%	
+% gen.								%GenParam.m
+% 	gen.struct.
+%		N
+%		R
+%		K
+% 	gen.param.
+%		theta
+%		eta
+%		p
+%
+% data.								%GenSpike.m
+% 	data.raw.						Data in Spike Timing
+%		xs:							spike data % 3 neurons 36 trials: {1x36 cell} {1x36 cell} {1x36 cell},    Each trial is [1,spike#] matrix
+%		N: 							# of Neurons
+%		n: 							# of trials
+%		D:							sampling resolution
+%		T:							observation length
+%		ext:						timing of external signals
+%		miss:						timing of missing observations
+% 	data.model(r).					%GenModel
+%		data.model.struct.				%Manual 
+%			N:
+%			R:
+%			D:	bin size
+%			n:
+%		data.model.binary.				%GenBinary.m
+%			y:
+%			n:
+%			d:
+%			K:							
+%			X:
+%			IDX:
+%			IDX_order:
+%			P:
+%			TH:
+%			id:
+%			order:
+%			ext:
+%			miss:
+%			data.model.binary.full
+%				y:
+%				X:
+%				IDX:
+%				P:
+%				TH:
+%				id
+%		data.model.init
+%			F:
+%			Q:
+%			mu:
+%			sig:
+%			data.model.init.switch
+%			F:
+%			Q:
+%			G:
+%
+%		data.model.param.				%ssloglin.m		
+%			iterations:
+%			data.model.param.onestep
+%				theta:
+%				W:
+%			data.model.param.filter
+%				theta:
+%				W:
+%				diagW:
+%			data.model.param.smoother
+%				theta:
+%				W:
+%				diagW:
+% 			data.model.param.hyper. 		%hyper parameters
+%				F:		
+%				Q:	
+%				mu:		
+%				sig:
+%			data.model.param.stat.
+%				ABIC:
+%				BF:

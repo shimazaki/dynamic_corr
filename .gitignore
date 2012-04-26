@@ -1,0 +1,7 @@
+tmp
+*~
+*.mat
+*.log
+*.asv
+*.eps
+*.DS_Store
