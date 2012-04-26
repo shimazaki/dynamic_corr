@@ -1,7 +1,6 @@
 tmp
 *~
 .gitignore
-*.mat
 *.log
 *.asv
 *.eps
