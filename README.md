@@ -8,3 +8,6 @@ State-space Analysis of Time-varying Higher-order Spike Correlation for Multiple
 PLoS Computational Biology (2012) 8(3): e1002385.
 
 http://dx.doi.org/10.1371/journal.pcbi.1002385
+
+
+Run a tutorial code in tutorial/tutorial.m
