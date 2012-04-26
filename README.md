@@ -9,5 +9,14 @@ PLoS Computational Biology (2012) 8(3): e1002385.
 
 http://dx.doi.org/10.1371/journal.pcbi.1002385
 
+<a name="First thing to do"/>
 
 Run a tutorial code in tutorial/tutorial.m
+
+<a name="Resources"/>
+
+
+- **Source code:** <https://github.com/shimazaki/dynamic_corr>
+- **Git clone URL:** <git://github.com/shimazaki/dynamic_corr.git>
+- **Documentation:** <http://2000.jukuin.keio.ac.jp/shimazaki/res/ssloglin/>
+
