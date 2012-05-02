@@ -7,7 +7,12 @@ function [TH, IDX, order IA] = CoordGen(N,RS)
 % eta-coordinate: expectation of the joint spikes.
 % P is the matrix that converts the p-coordinate into the eta-coordinate.
 % P is obtained as TH'.
-
+%
+% This program is distributed under the terms of 
+% the Creative Commons Attribution License (CC-BY)
+% Hideaki Shimazaki, Ph.D.
+% http://2000.jukuin.keio.ac.jp/shimazaki
+%
 % 2011/6/6 R -> RS, now the function accepts column vetor of orders.
 % 2011/11/15 Interaction index added
 
