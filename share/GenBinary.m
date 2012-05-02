@@ -1,4 +1,8 @@
 function binary = GenBinary(raw,struct)
+% This program is distributed under the terms of 
+% the Creative Commons Attribution License (CC-BY)
+% Hideaki Shimazaki, Ph.D.
+% http://2000.jukuin.keio.ac.jp/shimazaki
 
 [N,R,D,n] = deal(struct.N,struct.R,struct.D,struct.n);
 [xs] = deal(raw.xs);

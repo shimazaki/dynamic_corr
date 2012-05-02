@@ -1,4 +1,9 @@
 function [idx idxs] = invMultiIndex_nchoosek(N,R,subset)
+% This program is distributed under the terms of 
+% the Creative Commons Attribution License (CC-BY)
+% Hideaki Shimazaki, Ph.D.
+% http://2000.jukuin.keio.ac.jp/shimazaki
+
 %nCk =  @(n,k) prod(n-(k-1):n)/prod(1:k);
 R = sort(R);
 
