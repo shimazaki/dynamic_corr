@@ -28,7 +28,7 @@ within an expectation-maximazation algorithm for paramter optimization.
 Run a tutorial code in tutorial/tutorial.m
 
 tutorial.m
-```
+```matlab
 % This is a tutorial m-file for analysis of dynamic spike interactions
 %
 % Shimazaki H., Amari S., Brown E. N., and Gruen S.
