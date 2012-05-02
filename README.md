@@ -15,7 +15,9 @@ http://dx.doi.org/10.1371/journal.pcbi.1002385
 - **Source code:** <https://github.com/shimazaki/dynamic_corr>
 - **Git clone URL:** <git://github.com/shimazaki/dynamic_corr.git>
 - **Documentation:** <http://2000.jukuin.keio.ac.jp/shimazaki/res/ssloglin/>
-- **Author homepage:** <http://2000.jukuin.keio.ac.jp/shimazaki/>                
+- **Author homepage:** <http://2000.jukuin.keio.ac.jp/shimazaki/> 
+
+Original papers and presentation slides are included in tutorial directory.  
 
 ### Memo
 The main function of the set of programs is ssloglin/ssloglin.m. 
