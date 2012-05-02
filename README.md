@@ -29,6 +29,10 @@ The function computes filtering/smoothing estimate of the spike interactions
 within an expectation-maximazation algorithm for paramter optimization.
 
 
+"""
+test
+"""
+
 
 
 
