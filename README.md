@@ -24,7 +24,7 @@ Run a tutorial code in tutorial/tutorial.m
 
 
 ### Memo
-The most important function is ssloglin/ssloglin.m. 
+The main function of the set of programs is ssloglin/ssloglin.m. 
 The function computes filtering/smoothing estimate of the spike interactions
 within an expectation-maximazation algorithm for paramter optimization.
 
