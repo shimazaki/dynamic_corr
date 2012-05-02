@@ -1,6 +1,12 @@
 function param = ssloglin(binary,init)
+% This function returns filter/smoother estimate of the spike interactions.
 % 
-% 
+% Shimazaki H., Amari S., Brown E. N., and Gruen S.
+% State-space Analysis of Time-varying Higher-order Spike Correlation 
+% for Multiple Neural Spike Train Data. 
+% PLoS Computational Biology 8(3): e1002385. 
+% http://dx.doi.org/10.1371/journal.pcbi.1002385
+%
 % Author 2009 2010 2011, Hideaki Shimazaki.
 % http://2000.jukuin.keio.ac.jp/shimazaki
 
@@ -15,11 +21,11 @@ state = init.state;
 P = TH';
 
 %u = [zeros(M*2,1), [y(:,1); zeros(M,1)], [y(:,2:K); y(:,1:K-1)]];
-u = [zeros(M*3,1), [y(:,1); zeros(M*2,1)], [y(:,2); y(:,1); zeros(M,1)], ...
-    [y(:,3:K); y(:,2:K-1); y(:,1:K-2)]]; 
+%u = [zeros(M*3,1), [y(:,1); zeros(M*2,1)], [y(:,2); y(:,1); zeros(M,1)], ...
+%    [y(:,3:K); y(:,2:K-1); y(:,1:K-2)]]; 
+u = y(:,1:K);
 
 p = 1; %history
-u = y(:,1:K);
 for i = 1: p-1, u = [u; [zeros(M,i), y(:,1:K-i)]]; end
 u = [zeros(M*p,1) u];
 
@@ -336,11 +342,6 @@ end
 %%%%%%%%%%%%%%%%%%% Generate Statistics %%%%%%%%%%%%%%%%%%%%%%%%
 function stat = GenStatistics(param,binary)
 [n K] = deal(binary.n,binary.K);
-
-%[oe ov fe fv se sv] = deal(param.onestep.theta,param.onestep.W,...
-%    param.filter.theta, param.filter.W,...
-%    param.smoother.theta, param.smoother.W );
-
 [dim logL] = deal(param.stat.dim,param.stat.logL);
 
 stat.dim = dim;
