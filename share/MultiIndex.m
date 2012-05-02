@@ -1,4 +1,9 @@
 function [subset d] = MultiIndex(N,R,idx)
+% This program is distributed under the terms of 
+% the Creative Commons Attribution License (CC-BY)
+% Hideaki Shimazaki, Ph.D.
+% http://2000.jukuin.keio.ac.jp/shimazaki
+
 R = sort(R);
 
 if nargin == 2
