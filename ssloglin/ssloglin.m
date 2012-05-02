@@ -7,7 +7,9 @@ function param = ssloglin(binary,init)
 % PLoS Computational Biology 8(3): e1002385. 
 % http://dx.doi.org/10.1371/journal.pcbi.1002385
 %
-% Author 2009 2010 2011, Hideaki Shimazaki.
+% This program is distributed under the terms of 
+% the Creative Commons Attribution License (CC-BY)
+% Hideaki Shimazaki, Ph.D.
 % http://2000.jukuin.keio.ac.jp/shimazaki
 
 %%%%%%%%%%%%%%% Initialization of Parameters  %%%%%%%%%%%%%%
