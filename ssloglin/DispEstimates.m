@@ -33,7 +33,7 @@ for i = 1: 0;%d
     
 	hold on; line([1:K; 1: K],...
 	        [mode(j,:)+cf*sqrt(interval(j,:)); mode(j,:)-cf*sqrt(interval(j,:))],...
-            [7 7 7]/(8+0/d),'EdgeColor',[7 7 7]/(8),'LineWidth',2 );       
+            	,'Color',[7 7 7]/8,'LineWidth',2 );       
     j = j + 1;
 end
 
