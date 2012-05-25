@@ -92,7 +92,8 @@ data.model.struct.R = [1 2 3];  %The order of interactions in the model.
 %%%%%%%%%%%%%%%%%%% Optional Settings %%%%%%%%%%%%%%%%%%%%%%
 % There are variables you can tune according to your data. 
 % The default values are shown. Uncomment and change the variables.
-% The only free parameter in the analysis is data.model.init.Sig.
+% The only free parameter in the analysis is data.model.init.Sig (and 
+% the bin size, data.model.struct.D).
 data.model.init = struct;       %Please do not comment out this line.
 
 %data.model.init.state = struct('Q',1,'F',0,'G',0); 
@@ -111,8 +112,11 @@ data.model.init = struct;       %Please do not comment out this line.
 % Except for 'Sig', they will be updated and optimized. 
 %data.model.init.Sig = diag( 1*ones(1,d) ); 
 %data.model.init.Q = diag(.05*ones(1,d)); 
+%
+% Termination criterion
 %data.model.init.em_max_iteration = 200; %Maximum number of iterations
-%data.model.init.em_min_logLdiff = 0.1;
+%data.model.init.em_min_logLdiff = 0.1; %Iteration stops when increase 
+% in log-likelihood is less than 0.1.
 
 %%%%%%%%%%%%%%%%%%% State-space analysis %%%%%%%%%%%%%%%%%%%%%
 data.model = GenModel(data.raw, data.model.struct, data.model.init);
@@ -130,6 +134,6 @@ str = strcat('data/example_','Q',num2str(state.Q),...
 
 
 % Revision history
-% ver.0.11  2012/04/07 Added more explations.
+% ver.0.11  2012/04/07 Added more explanations.
 % ver.0.1   2012/03/16 Extended.  
 % ver.0.0   2011/12/12 The first draft of tutorial was created. 
